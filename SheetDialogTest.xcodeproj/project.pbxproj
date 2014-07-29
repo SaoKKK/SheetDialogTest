@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B946008B19885D4000B138EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B946008A19885D4000B138EA /* Cocoa.framework */; };
+		B946009519885D4000B138EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B946009319885D4000B138EA /* InfoPlist.strings */; };
+		B946009719885D4000B138EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B946009619885D4000B138EA /* main.m */; };
+		B946009B19885D4100B138EA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B946009919885D4100B138EA /* Credits.rtf */; };
+		B946009E19885D4100B138EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B946009D19885D4100B138EA /* AppDelegate.m */; };
+		B94600A119885D4100B138EA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B946009F19885D4100B138EA /* MainMenu.xib */; };
+		B94600A319885D4100B138EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B94600A219885D4100B138EA /* Images.xcassets */; };
+		B94600AA19885D4100B138EA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94600A919885D4100B138EA /* XCTest.framework */; };
+		B94600AB19885D4100B138EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B946008A19885D4000B138EA /* Cocoa.framework */; };
+		B94600B319885D4100B138EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B94600B119885D4100B138EA /* InfoPlist.strings */; };
+		B94600B519885D4100B138EA /* SheetDialogTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B94600B419885D4100B138EA /* SheetDialogTestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B94600AC19885D4100B138EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B946007F19885D3F00B138EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B946008619885D4000B138EA;
+			remoteInfo = SheetDialogTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B946008719885D4000B138EA /* SheetDialogTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheetDialogTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B946008A19885D4000B138EA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B946008D19885D4000B138EA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B946008E19885D4000B138EA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B946008F19885D4000B138EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B946009219885D4000B138EA /* SheetDialogTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SheetDialogTest-Info.plist"; sourceTree = "<group>"; };
+		B946009419885D4000B138EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B946009619885D4000B138EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B946009819885D4100B138EA /* SheetDialogTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SheetDialogTest-Prefix.pch"; sourceTree = "<group>"; };
+		B946009A19885D4100B138EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B946009C19885D4100B138EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B946009D19885D4100B138EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B94600A019885D4100B138EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B94600A219885D4100B138EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B94600A819885D4100B138EA /* SheetDialogTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheetDialogTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94600A919885D4100B138EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B94600B019885D4100B138EA /* SheetDialogTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SheetDialogTestTests-Info.plist"; sourceTree = "<group>"; };
+		B94600B219885D4100B138EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B94600B419885D4100B138EA /* SheetDialogTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheetDialogTestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B946008419885D4000B138EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B946008B19885D4000B138EA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94600A519885D4100B138EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94600AB19885D4100B138EA /* Cocoa.framework in Frameworks */,
+				B94600AA19885D4100B138EA /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B946007E19885D3F00B138EA = {
+			isa = PBXGroup;
+			children = (
+				B946009019885D4000B138EA /* SheetDialogTest */,
+				B94600AE19885D4100B138EA /* SheetDialogTestTests */,
+				B946008919885D4000B138EA /* Frameworks */,
+				B946008819885D4000B138EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B946008819885D4000B138EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B946008719885D4000B138EA /* SheetDialogTest.app */,
+				B94600A819885D4100B138EA /* SheetDialogTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B946008919885D4000B138EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B946008A19885D4000B138EA /* Cocoa.framework */,
+				B94600A919885D4100B138EA /* XCTest.framework */,
+				B946008C19885D4000B138EA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B946008C19885D4000B138EA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B946008D19885D4000B138EA /* AppKit.framework */,
+				B946008E19885D4000B138EA /* CoreData.framework */,
+				B946008F19885D4000B138EA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B946009019885D4000B138EA /* SheetDialogTest */ = {
+			isa = PBXGroup;
+			children = (
+				B946009C19885D4100B138EA /* AppDelegate.h */,
+				B946009D19885D4100B138EA /* AppDelegate.m */,
+				B946009F19885D4100B138EA /* MainMenu.xib */,
+				B94600A219885D4100B138EA /* Images.xcassets */,
+				B946009119885D4000B138EA /* Supporting Files */,
+			);
+			path = SheetDialogTest;
+			sourceTree = "<group>";
+		};
+		B946009119885D4000B138EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B946009219885D4000B138EA /* SheetDialogTest-Info.plist */,
+				B946009319885D4000B138EA /* InfoPlist.strings */,
+				B946009619885D4000B138EA /* main.m */,
+				B946009819885D4100B138EA /* SheetDialogTest-Prefix.pch */,
+				B946009919885D4100B138EA /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B94600AE19885D4100B138EA /* SheetDialogTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				B94600B419885D4100B138EA /* SheetDialogTestTests.m */,
+				B94600AF19885D4100B138EA /* Supporting Files */,
+			);
+			path = SheetDialogTestTests;
+			sourceTree = "<group>";
+		};
+		B94600AF19885D4100B138EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B94600B019885D4100B138EA /* SheetDialogTestTests-Info.plist */,
+				B94600B119885D4100B138EA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B946008619885D4000B138EA /* SheetDialogTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B94600B819885D4100B138EA /* Build configuration list for PBXNativeTarget "SheetDialogTest" */;
+			buildPhases = (
+				B946008319885D4000B138EA /* Sources */,
+				B946008419885D4000B138EA /* Frameworks */,
+				B946008519885D4000B138EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SheetDialogTest;
+			productName = SheetDialogTest;
+			productReference = B946008719885D4000B138EA /* SheetDialogTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B94600A719885D4100B138EA /* SheetDialogTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B94600BB19885D4100B138EA /* Build configuration list for PBXNativeTarget "SheetDialogTestTests" */;
+			buildPhases = (
+				B94600A419885D4100B138EA /* Sources */,
+				B94600A519885D4100B138EA /* Frameworks */,
+				B94600A619885D4100B138EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B94600AD19885D4100B138EA /* PBXTargetDependency */,
+			);
+			name = SheetDialogTestTests;
+			productName = SheetDialogTestTests;
+			productReference = B94600A819885D4100B138EA /* SheetDialogTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B946007F19885D3F00B138EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Saori Kohno";
+				TargetAttributes = {
+					B94600A719885D4100B138EA = {
+						TestTargetID = B946008619885D4000B138EA;
+					};
+				};
+			};
+			buildConfigurationList = B946008219885D4000B138EA /* Build configuration list for PBXProject "SheetDialogTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B946007E19885D3F00B138EA;
+			productRefGroup = B946008819885D4000B138EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B946008619885D4000B138EA /* SheetDialogTest */,
+				B94600A719885D4100B138EA /* SheetDialogTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B946008519885D4000B138EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B946009519885D4000B138EA /* InfoPlist.strings in Resources */,
+				B94600A319885D4100B138EA /* Images.xcassets in Resources */,
+				B946009B19885D4100B138EA /* Credits.rtf in Resources */,
+				B94600A119885D4100B138EA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94600A619885D4100B138EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94600B319885D4100B138EA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B946008319885D4000B138EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B946009E19885D4100B138EA /* AppDelegate.m in Sources */,
+				B946009719885D4000B138EA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94600A419885D4100B138EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94600B519885D4100B138EA /* SheetDialogTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B94600AD19885D4100B138EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B946008619885D4000B138EA /* SheetDialogTest */;
+			targetProxy = B94600AC19885D4100B138EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B946009319885D4000B138EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B946009419885D4000B138EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B946009919885D4100B138EA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B946009A19885D4100B138EA /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B946009F19885D4100B138EA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B94600A019885D4100B138EA /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B94600B119885D4100B138EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B94600B219885D4100B138EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B94600B619885D4100B138EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B94600B719885D4100B138EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B94600B919885D4100B138EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SheetDialogTest/SheetDialogTest-Prefix.pch";
+				INFOPLIST_FILE = "SheetDialogTest/SheetDialogTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B94600BA19885D4100B138EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SheetDialogTest/SheetDialogTest-Prefix.pch";
+				INFOPLIST_FILE = "SheetDialogTest/SheetDialogTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B94600BC19885D4100B138EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SheetDialogTest.app/Contents/MacOS/SheetDialogTest";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SheetDialogTest/SheetDialogTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SheetDialogTestTests/SheetDialogTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B94600BD19885D4100B138EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SheetDialogTest.app/Contents/MacOS/SheetDialogTest";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SheetDialogTest/SheetDialogTest-Prefix.pch";
+				INFOPLIST_FILE = "SheetDialogTestTests/SheetDialogTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B946008219885D4000B138EA /* Build configuration list for PBXProject "SheetDialogTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94600B619885D4100B138EA /* Debug */,
+				B94600B719885D4100B138EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B94600B819885D4100B138EA /* Build configuration list for PBXNativeTarget "SheetDialogTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94600B919885D4100B138EA /* Debug */,
+				B94600BA19885D4100B138EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B94600BB19885D4100B138EA /* Build configuration list for PBXNativeTarget "SheetDialogTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94600BC19885D4100B138EA /* Debug */,
+				B94600BD19885D4100B138EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B946007F19885D3F00B138EA /* Project object */;
+}
