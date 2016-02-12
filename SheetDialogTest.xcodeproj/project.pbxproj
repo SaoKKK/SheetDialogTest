@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B93FA5291C6D562A0034EC2C /* SheetWinView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93FA5271C6D562A0034EC2C /* SheetWinView.m */; };
+		B93FA52A1C6D562A0034EC2C /* SheetWinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93FA5281C6D562A0034EC2C /* SheetWinView.xib */; };
+		B93FA5301C6D72610034EC2C /* SheetWinView2.m in Sources */ = {isa = PBXBuildFile; fileRef = B93FA52E1C6D72610034EC2C /* SheetWinView2.m */; };
+		B93FA5311C6D72610034EC2C /* SheetWinView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93FA52F1C6D72610034EC2C /* SheetWinView2.xib */; };
 		B946008B19885D4000B138EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B946008A19885D4000B138EA /* Cocoa.framework */; };
 		B946009519885D4000B138EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B946009319885D4000B138EA /* InfoPlist.strings */; };
 		B946009719885D4000B138EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B946009619885D4000B138EA /* main.m */; };
@@ -31,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B93FA5261C6D562A0034EC2C /* SheetWinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheetWinView.h; sourceTree = "<group>"; };
+		B93FA5271C6D562A0034EC2C /* SheetWinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheetWinView.m; sourceTree = "<group>"; };
+		B93FA5281C6D562A0034EC2C /* SheetWinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SheetWinView.xib; sourceTree = "<group>"; };
+		B93FA52D1C6D72610034EC2C /* SheetWinView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SheetWinView2.h; path = SheetDialogTest/SheetWinView2.h; sourceTree = "<group>"; };
+		B93FA52E1C6D72610034EC2C /* SheetWinView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SheetWinView2.m; path = SheetDialogTest/SheetWinView2.m; sourceTree = "<group>"; };
+		B93FA52F1C6D72610034EC2C /* SheetWinView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SheetWinView2.xib; path = SheetDialogTest/SheetWinView2.xib; sourceTree = "<group>"; };
 		B946008719885D4000B138EA /* SheetDialogTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheetDialogTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B946008A19885D4000B138EA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B946008D19885D4000B138EA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -73,6 +83,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B93FA52B1C6D565D0034EC2C /* SheetWin2 */ = {
+			isa = PBXGroup;
+			children = (
+				B93FA5281C6D562A0034EC2C /* SheetWinView.xib */,
+				B93FA5261C6D562A0034EC2C /* SheetWinView.h */,
+				B93FA5271C6D562A0034EC2C /* SheetWinView.m */,
+			);
+			name = SheetWin2;
+			sourceTree = "<group>";
+		};
+		B93FA52C1C6D71FE0034EC2C /* SheetWin3 */ = {
+			isa = PBXGroup;
+			children = (
+				B93FA52F1C6D72610034EC2C /* SheetWinView2.xib */,
+				B93FA52D1C6D72610034EC2C /* SheetWinView2.h */,
+				B93FA52E1C6D72610034EC2C /* SheetWinView2.m */,
+			);
+			name = SheetWin3;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		B946007E19885D3F00B138EA = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +149,8 @@
 				B946009C19885D4100B138EA /* AppDelegate.h */,
 				B946009D19885D4100B138EA /* AppDelegate.m */,
 				B946009F19885D4100B138EA /* MainMenu.xib */,
+				B93FA52B1C6D565D0034EC2C /* SheetWin2 */,
+				B93FA52C1C6D71FE0034EC2C /* SheetWin3 */,
 				B94600A219885D4100B138EA /* Images.xcassets */,
 				B946009119885D4000B138EA /* Supporting Files */,
 			);
@@ -198,7 +231,7 @@
 		B946007F19885D3F00B138EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Saori Kohno";
 				TargetAttributes = {
 					B94600A719885D4100B138EA = {
@@ -232,8 +265,10 @@
 			files = (
 				B946009519885D4000B138EA /* InfoPlist.strings in Resources */,
 				B94600A319885D4100B138EA /* Images.xcassets in Resources */,
+				B93FA5311C6D72610034EC2C /* SheetWinView2.xib in Resources */,
 				B946009B19885D4100B138EA /* Credits.rtf in Resources */,
 				B94600A119885D4100B138EA /* MainMenu.xib in Resources */,
+				B93FA52A1C6D562A0034EC2C /* SheetWinView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +289,8 @@
 			files = (
 				B946009E19885D4100B138EA /* AppDelegate.m in Sources */,
 				B946009719885D4000B138EA /* main.m in Sources */,
+				B93FA5301C6D72610034EC2C /* SheetWinView2.m in Sources */,
+				B93FA5291C6D562A0034EC2C /* SheetWinView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +365,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -389,7 +427,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SheetDialogTest/SheetDialogTest-Prefix.pch";
 				INFOPLIST_FILE = "SheetDialogTest/SheetDialogTest-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Sao.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -402,7 +442,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SheetDialogTest/SheetDialogTest-Prefix.pch";
 				INFOPLIST_FILE = "SheetDialogTest/SheetDialogTest-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Sao.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -423,7 +465,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "SheetDialogTestTests/SheetDialogTestTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Sao.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -441,7 +485,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SheetDialogTest/SheetDialogTest-Prefix.pch";
 				INFOPLIST_FILE = "SheetDialogTestTests/SheetDialogTestTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Sao.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -466,6 +512,7 @@
 				B94600BA19885D4100B138EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B94600BB19885D4100B138EA /* Build configuration list for PBXNativeTarget "SheetDialogTestTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +521,7 @@
 				B94600BD19885D4100B138EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
