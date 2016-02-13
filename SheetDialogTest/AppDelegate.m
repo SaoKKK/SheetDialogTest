@@ -10,7 +10,7 @@
 
 @implementation AppDelegate
 
-@synthesize sheetWin2,contentViewCtr;
+@synthesize sheetWin2,statusWin,contentViewCtr;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -41,7 +41,7 @@
     NSArray *fileTypes = [NSArray arrayWithObjects:@"pdf", nil];
     [openpanel setAllowedFileTypes:fileTypes]; //選択できるファイルの種類
     //[openpanel setCanChooseFiles:NO]; //ファイルの選択の可否
-    [openpanel setCanChooseDirectories:NO]; //ディレクトリの選択の可否
+    //[openpanel setCanChooseDirectories:NO]; //ディレクトリの選択の可否
     //[openpanel setResolvesAliases:NO]; //エイリアス解析の可否
     [openpanel setShowsHiddenFiles:YES]; //隠しファイル表示の可否
     [openpanel setAllowsMultipleSelection:YES]; //複数ファイル選択の可否
@@ -69,8 +69,8 @@
     [savepanel setDirectoryURL:NO]; //初期表示でディレクトリの内容表示の可否
     [savepanel setTreatsFilePackagesAsDirectories:YES]; //パッケージをディレクトして扱うかの可否
     [savepanel setTagNames:[NSArray arrayWithObjects:@"User'sFile", nil]]; //タグフィールドのデフォルト値
-    [savepanel setCanSelectHiddenExtension:YES]; //拡張子を隠すチェックボックスの有無
-    [savepanel setExtensionHidden:NO]; //拡張子を隠すチェックボックスの初期ステータス
+    //[savepanel setCanSelectHiddenExtension:YES]; //拡張子を隠すチェックボックスの有無
+    //[savepanel setExtensionHidden:NO]; //拡張子を隠すチェックボックスの初期ステータス
     [savepanel beginSheetModalForWindow:mainWindow completionHandler:^(NSInteger result){
         if (result == NSFileHandlingPanelOKButton) {
             NSURL *url = [savepanel URL];
@@ -108,6 +108,17 @@
     contentViewCtr = [[NSViewController alloc]initWithNibName:viewName bundle:nil];
     NSView *view = [contentViewCtr view];
     [contentView addSubview:view];
+}
+
+- (IBAction)pshShowStatus:(id)sender {
+    [statusWin setFrame:NSMakeRect(mainWindow.frame.origin.x + mainWindow.frame.size.width*0.5 - statusWin.frame.size.width*0.5, mainWindow.frame.origin.y + ((mainWindow.frame.size.height - statusWin.frame.size.height)*0.5), statusWin.frame.size.width, statusWin.frame.size.height) display:NO];
+    [statusWin setLevel:NSFloatingWindowLevel];
+    [statusWin orderFront:self];
+    [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(closeStatusWin) userInfo:nil repeats:NO];
+}
+
+- (void)closeStatusWin{
+    [statusWin orderOut:self];
 }
 
 @end

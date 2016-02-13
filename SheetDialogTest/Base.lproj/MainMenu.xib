@@ -18,6 +18,7 @@
                 <outlet property="mainWindow" destination="QvC-M9-y7g" id="2ji-Mf-JqE"/>
                 <outlet property="sheetWin" destination="QoC-fK-oV5" id="vwh-hV-JCT"/>
                 <outlet property="sheetWin2" destination="v46-cB-nur" id="OJN-jv-zdy"/>
+                <outlet property="statusWin" destination="aCs-Ox-LJz" id="5Rs-a8-VEU"/>
                 <outlet property="txtField" destination="cyQ-un-eYB" id="gR4-WT-qyq"/>
             </connections>
         </customObject>
@@ -676,7 +677,7 @@
             </items>
         </menu>
         <window title="SheetDialogTest" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="178"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
@@ -748,11 +749,22 @@
                             <action selector="pshShowDialog:" target="Voe-Tx-rLC" id="3Nn-wc-irt"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" id="EZV-U5-cRg">
+                        <rect key="frame" x="205" y="53" width="97" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="status dialog" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5bZ-I7-T8t">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="pshShowStatus:" target="Voe-Tx-rLC" id="xOQ-04-TAC"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <point key="canvasLocation" x="139" y="192"/>
         </window>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="QoC-fK-oV5">
+        <window title="SheetWin" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="QoC-fK-oV5">
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="109" y="138" width="380" height="85"/>
@@ -800,9 +812,9 @@ Gw
                     </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="650" y="284.5"/>
+            <point key="canvasLocation" x="89" y="400.5"/>
         </window>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="v46-cB-nur">
+        <window title="SheetWin2" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="v46-cB-nur">
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="109" y="138" width="300" height="100"/>
@@ -817,7 +829,37 @@ Gw
                     </customView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="61" y="453"/>
+            <point key="canvasLocation" x="49" y="569"/>
+        </window>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="aCs-Ox-LJz" customClass="CCStatusWin">
+            <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="138" width="250" height="100"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="GSg-xw-yCO">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="czv-8b-oVC">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="statusWinBack" id="gSh-NU-NE6"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="IPd-5u-FJy">
+                        <rect key="frame" x="24" y="66" width="221" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="any status messages...." id="ddM-1D-kyB">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="1306.5" y="319.5"/>
         </window>
     </objects>
+    <resources>
+        <image name="statusWinBack" width="250" height="100"/>
+    </resources>
 </document>
