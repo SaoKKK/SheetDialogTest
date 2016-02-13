@@ -21,6 +21,7 @@ static const int SHEET3_OK      = 131;
 }
 
 @property (weak) IBOutlet NSWindow *sheetWin2;
+@property (weak) IBOutlet NSWindow *statusWin;
 @property (readonly,nonatomic) NSViewController *contentViewCtr;
 
 - (void)sheetDidEnd:(NSWindow*)sheet returnCode:(int)returnCode contextInfo:(void*)contextInfo;

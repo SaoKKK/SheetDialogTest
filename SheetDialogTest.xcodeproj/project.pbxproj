@@ -22,6 +22,8 @@
 		B94600AB19885D4100B138EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B946008A19885D4000B138EA /* Cocoa.framework */; };
 		B94600B319885D4100B138EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B94600B119885D4100B138EA /* InfoPlist.strings */; };
 		B94600B519885D4100B138EA /* SheetDialogTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B94600B419885D4100B138EA /* SheetDialogTestTests.m */; };
+		B9F9FE401C6EF49000D89A4D /* CCStatusWin.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F9FE3E1C6EF48F00D89A4D /* CCStatusWin.m */; };
+		B9F9FE421C6F074C00D89A4D /* statusWinBack.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F9FE411C6F074C00D89A4D /* statusWinBack.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		B94600B019885D4100B138EA /* SheetDialogTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SheetDialogTestTests-Info.plist"; sourceTree = "<group>"; };
 		B94600B219885D4100B138EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B94600B419885D4100B138EA /* SheetDialogTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheetDialogTestTests.m; sourceTree = "<group>"; };
+		B9F9FE3D1C6EF48F00D89A4D /* CCStatusWin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStatusWin.h; sourceTree = "<group>"; };
+		B9F9FE3E1C6EF48F00D89A4D /* CCStatusWin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStatusWin.m; sourceTree = "<group>"; };
+		B9F9FE411C6F074C00D89A4D /* statusWinBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusWinBack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +156,7 @@
 				B946009F19885D4100B138EA /* MainMenu.xib */,
 				B93FA52B1C6D565D0034EC2C /* SheetWin2 */,
 				B93FA52C1C6D71FE0034EC2C /* SheetWin3 */,
+				B9F9FE341C6EF39800D89A4D /* StatusWin */,
 				B94600A219885D4100B138EA /* Images.xcassets */,
 				B946009119885D4000B138EA /* Supporting Files */,
 			);
@@ -185,6 +191,16 @@
 				B94600B119885D4100B138EA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9F9FE341C6EF39800D89A4D /* StatusWin */ = {
+			isa = PBXGroup;
+			children = (
+				B9F9FE411C6F074C00D89A4D /* statusWinBack.png */,
+				B9F9FE3D1C6EF48F00D89A4D /* CCStatusWin.h */,
+				B9F9FE3E1C6EF48F00D89A4D /* CCStatusWin.m */,
+			);
+			name = StatusWin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +284,7 @@
 				B93FA5311C6D72610034EC2C /* SheetWinView2.xib in Resources */,
 				B946009B19885D4100B138EA /* Credits.rtf in Resources */,
 				B94600A119885D4100B138EA /* MainMenu.xib in Resources */,
+				B9F9FE421C6F074C00D89A4D /* statusWinBack.png in Resources */,
 				B93FA52A1C6D562A0034EC2C /* SheetWinView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +306,7 @@
 			files = (
 				B946009E19885D4100B138EA /* AppDelegate.m in Sources */,
 				B946009719885D4000B138EA /* main.m in Sources */,
+				B9F9FE401C6EF49000D89A4D /* CCStatusWin.m in Sources */,
 				B93FA5301C6D72610034EC2C /* SheetWinView2.m in Sources */,
 				B93FA5291C6D562A0034EC2C /* SheetWinView.m in Sources */,
 			);
