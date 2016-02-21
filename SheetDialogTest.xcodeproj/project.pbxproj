@@ -21,8 +21,8 @@
 		B96E67EF1C79955F00C5E260 /* SheetWin2Ctr.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E67ED1C79955E00C5E260 /* SheetWin2Ctr.m */; };
 		B96E67F01C79955F00C5E260 /* SheetWin2Ctr.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96E67EE1C79955E00C5E260 /* SheetWin2Ctr.xib */; };
 		B96E67F31C79E3F400C5E260 /* CCBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E67F21C79E3F400C5E260 /* CCBackGroundView.m */; };
-		B96E67F71C79E57800C5E260 /* ModalWinCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E67F51C79E57800C5E260 /* ModalWinCtr.m */; };
-		B96E67F81C79E57800C5E260 /* ModalWinCtr.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96E67F61C79E57800C5E260 /* ModalWinCtr.xib */; };
+		B96E67FE1C7A10DC00C5E260 /* ModalWinCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E67FC1C7A10DC00C5E260 /* ModalWinCtr.m */; };
+		B96E67FF1C7A10DC00C5E260 /* ModalWinCtr.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96E67FD1C7A10DC00C5E260 /* ModalWinCtr.xib */; };
 		B9F9FE401C6EF49000D89A4D /* CCStatusWin.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F9FE3E1C6EF48F00D89A4D /* CCStatusWin.m */; };
 /* End PBXBuildFile section */
 
@@ -61,9 +61,9 @@
 		B96E67EE1C79955E00C5E260 /* SheetWin2Ctr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SheetWin2Ctr.xib; sourceTree = "<group>"; };
 		B96E67F11C79E3F400C5E260 /* CCBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBackGroundView.h; sourceTree = "<group>"; };
 		B96E67F21C79E3F400C5E260 /* CCBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBackGroundView.m; sourceTree = "<group>"; };
-		B96E67F41C79E57800C5E260 /* ModalWinCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalWinCtr.h; sourceTree = "<group>"; };
-		B96E67F51C79E57800C5E260 /* ModalWinCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalWinCtr.m; sourceTree = "<group>"; };
-		B96E67F61C79E57800C5E260 /* ModalWinCtr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalWinCtr.xib; sourceTree = "<group>"; };
+		B96E67FB1C7A10DC00C5E260 /* ModalWinCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModalWinCtr.h; path = SheetDialogTest/ModalWinCtr.h; sourceTree = "<group>"; };
+		B96E67FC1C7A10DC00C5E260 /* ModalWinCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModalWinCtr.m; path = SheetDialogTest/ModalWinCtr.m; sourceTree = "<group>"; };
+		B96E67FD1C7A10DC00C5E260 /* ModalWinCtr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ModalWinCtr.xib; path = SheetDialogTest/ModalWinCtr.xib; sourceTree = "<group>"; };
 		B9F9FE3D1C6EF48F00D89A4D /* CCStatusWin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStatusWin.h; sourceTree = "<group>"; };
 		B9F9FE3E1C6EF48F00D89A4D /* CCStatusWin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStatusWin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,9 +102,9 @@
 		B93FA52C1C6D71FE0034EC2C /* CustomModalWin */ = {
 			isa = PBXGroup;
 			children = (
-				B96E67F61C79E57800C5E260 /* ModalWinCtr.xib */,
-				B96E67F41C79E57800C5E260 /* ModalWinCtr.h */,
-				B96E67F51C79E57800C5E260 /* ModalWinCtr.m */,
+				B96E67FB1C7A10DC00C5E260 /* ModalWinCtr.h */,
+				B96E67FC1C7A10DC00C5E260 /* ModalWinCtr.m */,
+				B96E67FD1C7A10DC00C5E260 /* ModalWinCtr.xib */,
 			);
 			name = CustomModalWin;
 			path = ..;
@@ -281,8 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B96E67F81C79E57800C5E260 /* ModalWinCtr.xib in Resources */,
 				B946009519885D4000B138EA /* InfoPlist.strings in Resources */,
+				B96E67FF1C7A10DC00C5E260 /* ModalWinCtr.xib in Resources */,
 				B94600A319885D4100B138EA /* Images.xcassets in Resources */,
 				B96E67F01C79955F00C5E260 /* SheetWin2Ctr.xib in Resources */,
 				B946009B19885D4100B138EA /* Credits.rtf in Resources */,
@@ -305,11 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B96E67F71C79E57800C5E260 /* ModalWinCtr.m in Sources */,
 				B946009E19885D4100B138EA /* AppDelegate.m in Sources */,
 				B946009719885D4000B138EA /* main.m in Sources */,
 				B9F9FE401C6EF49000D89A4D /* CCStatusWin.m in Sources */,
 				B96E67EF1C79955F00C5E260 /* SheetWin2Ctr.m in Sources */,
+				B96E67FE1C7A10DC00C5E260 /* ModalWinCtr.m in Sources */,
 				B96E67F31C79E3F400C5E260 /* CCBackGroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
