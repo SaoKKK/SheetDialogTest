@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SheetWin2Ctr.h"
+#import "ModalWinCtr.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>{
     IBOutlet NSWindow *mainWindow;
@@ -16,6 +17,7 @@
 }
 
 @property (weak) IBOutlet NSWindow *statusWin;
-@property (strong)SheetWin2Ctr *myModalWinCtr;
+@property (strong)SheetWin2Ctr *mySheetWinCtr;
+@property (strong)ModalWinCtr *myModalWinCtr;
 
 @end

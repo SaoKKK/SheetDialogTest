@@ -13,7 +13,7 @@ static const NSInteger SHEET1_CANCEL	= 129;
 
 @implementation AppDelegate
 
-@synthesize statusWin,myModalWinCtr;
+@synthesize statusWin,mySheetWinCtr,myModalWinCtr;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -87,19 +87,62 @@ static const NSInteger SHEET1_CANCEL	= 129;
 #pragma mark - custom sheet panel of another xib file
 
 - (IBAction)pshShowSheet2:(id)sender {
-    self.myModalWinCtr = [[SheetWin2Ctr alloc]initWithWindowNibName:@"SheetWin2Ctr"];
-    [mainWindow beginSheet:self.myModalWinCtr.window completionHandler:^(NSModalResponse returnCode){
+    self.mySheetWinCtr = [[SheetWin2Ctr alloc]initWithWindowNibName:@"SheetWin2Ctr"];
+    [mainWindow beginSheet:self.mySheetWinCtr.window completionHandler:^(NSModalResponse returnCode){
         if (returnCode == NSModalResponseOK) {
             NSLog(@"Sheet2ok");
         } else {
             NSLog(@"sheet2cancel");
         }
-        self.myModalWinCtr = nil;
+        self.mySheetWinCtr = nil;
     }];
 }
 
-#pragma mark - alert sheet
+#pragma mark - custom modal dialog
+
+- (IBAction)pshMyModalWin:(id)sender {
+    self.myModalWinCtr = [[ModalWinCtr alloc]initWithWindowNibName:@"ModalWinCtr"];
+    NSModalResponse returnCode = [NSApp runModalForWindow:self.myModalWinCtr.window];
+    if (returnCode == NSModalResponseOK) {
+        NSLog(@"CustomModalDialogOK");
+    } else {
+        NSLog(@"CustomModalDialogCancel");
+    }
+    [NSApp endSheet:myModalWinCtr.window];
+    [myModalWinCtr.window orderOut:self];
+}
+
+#pragma mark - alert sheet & modal dialog
+
 - (IBAction)pshShowSheet3:(id)sender {
+    NSAlert *alert = [self setAlert];
+    [alert beginSheetModalForWindow:mainWindow completionHandler:^(NSModalResponse returnCode){
+        if (returnCode == NSAlertFirstButtonReturn) {
+            NSLog(@"alertOK");
+        } else {
+            NSLog(@"alertCancel");
+        }
+    }];
+}
+
+- (IBAction)pshAlertModalDialog:(id)sender {
+    NSAlert *alert = [self setAlert];
+    NSModalResponse returnCode = [alert runModal];
+    if (returnCode == NSAlertFirstButtonReturn) {
+        NSLog(@"alertModalOK");
+    } else {
+        NSLog(@"alertModalCancel");
+    }
+}
+
+- (NSAlert*)setAlert{
+    NSAlert *alert = [[NSAlert alloc]init];
+    alert.messageText = @"Alert";
+    [alert addButtonWithTitle:@"OK"];
+    [alert addButtonWithTitle:@"Cancel"];
+    [alert setInformativeText:@"NSWarningAlertStyle \rDo you want to continue with delete of selected records?"];
+    [alert setAlertStyle:NSCriticalAlertStyle];
+    return alert;
 }
 
 #pragma mark - status panel
