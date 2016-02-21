@@ -14,10 +14,8 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="contentView" destination="v6j-WN-2OA" id="r4v-hC-N9r"/>
                 <outlet property="mainWindow" destination="QvC-M9-y7g" id="2ji-Mf-JqE"/>
                 <outlet property="sheetWin" destination="QoC-fK-oV5" id="vwh-hV-JCT"/>
-                <outlet property="sheetWin2" destination="v46-cB-nur" id="OJN-jv-zdy"/>
                 <outlet property="statusWin" destination="aCs-Ox-LJz" id="5Rs-a8-VEU"/>
                 <outlet property="txtField" destination="cyQ-un-eYB" id="gR4-WT-qyq"/>
             </connections>
@@ -762,6 +760,9 @@
                     </button>
                 </subviews>
             </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="h7K-Vj-aKU"/>
+            </connections>
             <point key="canvasLocation" x="139" y="192"/>
         </window>
         <window title="SheetWin" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="QoC-fK-oV5">
@@ -793,7 +794,7 @@ DQ
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="sheetOk:" target="Voe-Tx-rLC" id="K9g-LT-1PO"/>
+                            <action selector="sheetOk:" target="Voe-Tx-rLC" id="TCO-pN-jW9"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" id="cEC-wd-b7r">
@@ -807,44 +808,22 @@ Gw
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="sheetCancel:" target="Voe-Tx-rLC" id="awF-OE-mP4"/>
+                            <action selector="sheetCancel:" target="Voe-Tx-rLC" id="yfb-yv-VZO"/>
                         </connections>
                     </button>
                 </subviews>
             </view>
             <point key="canvasLocation" x="89" y="400.5"/>
         </window>
-        <window title="SheetWin2" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="v46-cB-nur">
-            <windowStyleMask key="styleMask" titled="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="109" y="138" width="300" height="100"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
-            <view key="contentView" id="7Ab-Vg-JUt">
-                <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <customView id="v6j-WN-2OA">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </customView>
-                </subviews>
-            </view>
-            <point key="canvasLocation" x="49" y="569"/>
-        </window>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="aCs-Ox-LJz" customClass="CCStatusWin">
             <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="109" y="138" width="250" height="100"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
-            <view key="contentView" id="GSg-xw-yCO">
+            <view key="contentView" id="GSg-xw-yCO" customClass="CCBackGroundView">
                 <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="czv-8b-oVC">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="statusWinBack" id="gSh-NU-NE6"/>
-                    </imageView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="IPd-5u-FJy">
                         <rect key="frame" x="24" y="66" width="221" height="14"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -859,7 +838,4 @@ Gw
             <point key="canvasLocation" x="1306.5" y="319.5"/>
         </window>
     </objects>
-    <resources>
-        <image name="statusWinBack" width="250" height="100"/>
-    </resources>
 </document>

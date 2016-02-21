@@ -8,31 +8,16 @@
 
 #import "AppDelegate.h"
 
+static const NSInteger SHEET1_OK		= 128;
+static const NSInteger SHEET1_CANCEL	= 129;
+
 @implementation AppDelegate
 
-@synthesize sheetWin2,statusWin,contentViewCtr;
+@synthesize statusWin,myModalWinCtr;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-}
-
-- (void)sheetDidEnd:(NSWindow*)sheet returnCode:(int)returnCode contextInfo:(void*)contextInfo{
-    [sheet orderOut:self];
-    if(returnCode == SHEET1_OK) {
-        //Sheet1でOKボタンが押された
-        NSLog(@"Sheet1ok");
-        return;
-    } else if (returnCode == SHEET1_CANCEL) {
-        //Sheet1でキャンセルボタンが押された
-        NSLog(@"Sheet1cancel");
-    } else if (returnCode == SHEET2_OK) {
-        //Sheet2でOKボタンが押された
-        NSLog(@"Sheet2OK");
-    } else {
-        //Sheet3でOKボタンが押された
-        NSLog(@"Sheet3OK");
-    }
 }
 
 - (IBAction)pshOpenPanel:(id)sender {
@@ -79,36 +64,45 @@
     }];
 }
 
+#pragma mark - custom sheet panel of the same xib file
+
 - (IBAction)pshShowDialog:(id)sender {
-    [[NSApplication sharedApplication] beginSheet:sheetWin modalForWindow:mainWindow modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:nil];
+    [mainWindow beginSheet:sheetWin completionHandler:^(NSInteger returnCode){
+        if (returnCode == SHEET1_OK) {
+            NSLog(@"Sheet1ok");
+        } else {
+            NSLog(@"Sheet1Cancel");
+        }
+    }];
 }
+     
 - (IBAction)sheetOk:(id)sender {
-    [[NSApplication sharedApplication] endSheet:sheetWin returnCode:SHEET1_OK];
+    [mainWindow endSheet:sheetWin returnCode:SHEET1_OK];
 }
 
 - (IBAction)sheetCancel:(id)sender {
-    [[NSApplication sharedApplication] endSheet:sheetWin returnCode:SHEET1_CANCEL];
+    [mainWindow endSheet:sheetWin returnCode:SHEET1_CANCEL];
 }
+
+#pragma mark - custom sheet panel of another xib file
+
 - (IBAction)pshShowSheet2:(id)sender {
-    [sheetWin2 setFrame:NSMakeRect(0,0,300, 100) display:NO];
-    [self loadView:@"SheetWinView"];
-    [[NSApplication sharedApplication] beginSheet:sheetWin2 modalForWindow:mainWindow modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:nil];
+    self.myModalWinCtr = [[SheetWin2Ctr alloc]initWithWindowNibName:@"SheetWin2Ctr"];
+    [mainWindow beginSheet:self.myModalWinCtr.window completionHandler:^(NSModalResponse returnCode){
+        if (returnCode == NSModalResponseOK) {
+            NSLog(@"Sheet2ok");
+        } else {
+            NSLog(@"sheet2cancel");
+        }
+        self.myModalWinCtr = nil;
+    }];
 }
 
+#pragma mark - alert sheet
 - (IBAction)pshShowSheet3:(id)sender {
-    [sheetWin2 setFrame:NSMakeRect(0,0,400, 200) display:NO];
-    [self loadView:@"SheetWinView2"];
-    [[NSApplication sharedApplication] beginSheet:sheetWin2 modalForWindow:mainWindow modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:nil];
 }
 
-- (void)loadView:(NSString *)viewName{
-    if(contentViewCtr){
-        [[contentViewCtr view] removeFromSuperview];
-    }
-    contentViewCtr = [[NSViewController alloc]initWithNibName:viewName bundle:nil];
-    NSView *view = [contentViewCtr view];
-    [contentView addSubview:view];
-}
+#pragma mark - status panel
 
 - (IBAction)pshShowStatus:(id)sender {
     [statusWin setFrame:NSMakeRect(mainWindow.frame.origin.x + mainWindow.frame.size.width*0.5 - statusWin.frame.size.width*0.5, mainWindow.frame.origin.y + ((mainWindow.frame.size.height - statusWin.frame.size.height)*0.5), statusWin.frame.size.width, statusWin.frame.size.height) display:NO];

@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B93FA5291C6D562A0034EC2C /* SheetWinView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93FA5271C6D562A0034EC2C /* SheetWinView.m */; };
-		B93FA52A1C6D562A0034EC2C /* SheetWinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93FA5281C6D562A0034EC2C /* SheetWinView.xib */; };
-		B93FA5301C6D72610034EC2C /* SheetWinView2.m in Sources */ = {isa = PBXBuildFile; fileRef = B93FA52E1C6D72610034EC2C /* SheetWinView2.m */; };
-		B93FA5311C6D72610034EC2C /* SheetWinView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93FA52F1C6D72610034EC2C /* SheetWinView2.xib */; };
 		B946008B19885D4000B138EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B946008A19885D4000B138EA /* Cocoa.framework */; };
 		B946009519885D4000B138EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B946009319885D4000B138EA /* InfoPlist.strings */; };
 		B946009719885D4000B138EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B946009619885D4000B138EA /* main.m */; };
@@ -22,8 +18,12 @@
 		B94600AB19885D4100B138EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B946008A19885D4000B138EA /* Cocoa.framework */; };
 		B94600B319885D4100B138EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B94600B119885D4100B138EA /* InfoPlist.strings */; };
 		B94600B519885D4100B138EA /* SheetDialogTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B94600B419885D4100B138EA /* SheetDialogTestTests.m */; };
+		B96E67EF1C79955F00C5E260 /* SheetWin2Ctr.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E67ED1C79955E00C5E260 /* SheetWin2Ctr.m */; };
+		B96E67F01C79955F00C5E260 /* SheetWin2Ctr.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96E67EE1C79955E00C5E260 /* SheetWin2Ctr.xib */; };
+		B96E67F31C79E3F400C5E260 /* CCBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E67F21C79E3F400C5E260 /* CCBackGroundView.m */; };
+		B96E67F71C79E57800C5E260 /* ModalWinCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E67F51C79E57800C5E260 /* ModalWinCtr.m */; };
+		B96E67F81C79E57800C5E260 /* ModalWinCtr.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96E67F61C79E57800C5E260 /* ModalWinCtr.xib */; };
 		B9F9FE401C6EF49000D89A4D /* CCStatusWin.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F9FE3E1C6EF48F00D89A4D /* CCStatusWin.m */; };
-		B9F9FE421C6F074C00D89A4D /* statusWinBack.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F9FE411C6F074C00D89A4D /* statusWinBack.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B93FA5261C6D562A0034EC2C /* SheetWinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheetWinView.h; sourceTree = "<group>"; };
-		B93FA5271C6D562A0034EC2C /* SheetWinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheetWinView.m; sourceTree = "<group>"; };
-		B93FA5281C6D562A0034EC2C /* SheetWinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SheetWinView.xib; sourceTree = "<group>"; };
-		B93FA52D1C6D72610034EC2C /* SheetWinView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SheetWinView2.h; path = SheetDialogTest/SheetWinView2.h; sourceTree = "<group>"; };
-		B93FA52E1C6D72610034EC2C /* SheetWinView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SheetWinView2.m; path = SheetDialogTest/SheetWinView2.m; sourceTree = "<group>"; };
-		B93FA52F1C6D72610034EC2C /* SheetWinView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SheetWinView2.xib; path = SheetDialogTest/SheetWinView2.xib; sourceTree = "<group>"; };
 		B946008719885D4000B138EA /* SheetDialogTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheetDialogTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B946008A19885D4000B138EA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B946008D19885D4000B138EA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -62,9 +56,16 @@
 		B94600B019885D4100B138EA /* SheetDialogTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SheetDialogTestTests-Info.plist"; sourceTree = "<group>"; };
 		B94600B219885D4100B138EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B94600B419885D4100B138EA /* SheetDialogTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheetDialogTestTests.m; sourceTree = "<group>"; };
+		B96E67EC1C79955E00C5E260 /* SheetWin2Ctr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheetWin2Ctr.h; sourceTree = "<group>"; };
+		B96E67ED1C79955E00C5E260 /* SheetWin2Ctr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheetWin2Ctr.m; sourceTree = "<group>"; };
+		B96E67EE1C79955E00C5E260 /* SheetWin2Ctr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SheetWin2Ctr.xib; sourceTree = "<group>"; };
+		B96E67F11C79E3F400C5E260 /* CCBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBackGroundView.h; sourceTree = "<group>"; };
+		B96E67F21C79E3F400C5E260 /* CCBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBackGroundView.m; sourceTree = "<group>"; };
+		B96E67F41C79E57800C5E260 /* ModalWinCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalWinCtr.h; sourceTree = "<group>"; };
+		B96E67F51C79E57800C5E260 /* ModalWinCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalWinCtr.m; sourceTree = "<group>"; };
+		B96E67F61C79E57800C5E260 /* ModalWinCtr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalWinCtr.xib; sourceTree = "<group>"; };
 		B9F9FE3D1C6EF48F00D89A4D /* CCStatusWin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStatusWin.h; sourceTree = "<group>"; };
 		B9F9FE3E1C6EF48F00D89A4D /* CCStatusWin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStatusWin.m; sourceTree = "<group>"; };
-		B9F9FE411C6F074C00D89A4D /* statusWinBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusWinBack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,24 +89,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B93FA52B1C6D565D0034EC2C /* SheetWin2 */ = {
+		B93FA52B1C6D565D0034EC2C /* CustomSheetWin */ = {
 			isa = PBXGroup;
 			children = (
-				B93FA5281C6D562A0034EC2C /* SheetWinView.xib */,
-				B93FA5261C6D562A0034EC2C /* SheetWinView.h */,
-				B93FA5271C6D562A0034EC2C /* SheetWinView.m */,
+				B96E67EE1C79955E00C5E260 /* SheetWin2Ctr.xib */,
+				B96E67EC1C79955E00C5E260 /* SheetWin2Ctr.h */,
+				B96E67ED1C79955E00C5E260 /* SheetWin2Ctr.m */,
 			);
-			name = SheetWin2;
+			name = CustomSheetWin;
 			sourceTree = "<group>";
 		};
-		B93FA52C1C6D71FE0034EC2C /* SheetWin3 */ = {
+		B93FA52C1C6D71FE0034EC2C /* CustomModalWin */ = {
 			isa = PBXGroup;
 			children = (
-				B93FA52F1C6D72610034EC2C /* SheetWinView2.xib */,
-				B93FA52D1C6D72610034EC2C /* SheetWinView2.h */,
-				B93FA52E1C6D72610034EC2C /* SheetWinView2.m */,
+				B96E67F61C79E57800C5E260 /* ModalWinCtr.xib */,
+				B96E67F41C79E57800C5E260 /* ModalWinCtr.h */,
+				B96E67F51C79E57800C5E260 /* ModalWinCtr.m */,
 			);
-			name = SheetWin3;
+			name = CustomModalWin;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -154,8 +155,8 @@
 				B946009C19885D4100B138EA /* AppDelegate.h */,
 				B946009D19885D4100B138EA /* AppDelegate.m */,
 				B946009F19885D4100B138EA /* MainMenu.xib */,
-				B93FA52B1C6D565D0034EC2C /* SheetWin2 */,
-				B93FA52C1C6D71FE0034EC2C /* SheetWin3 */,
+				B93FA52B1C6D565D0034EC2C /* CustomSheetWin */,
+				B93FA52C1C6D71FE0034EC2C /* CustomModalWin */,
 				B9F9FE341C6EF39800D89A4D /* StatusWin */,
 				B94600A219885D4100B138EA /* Images.xcassets */,
 				B946009119885D4000B138EA /* Supporting Files */,
@@ -196,7 +197,8 @@
 		B9F9FE341C6EF39800D89A4D /* StatusWin */ = {
 			isa = PBXGroup;
 			children = (
-				B9F9FE411C6F074C00D89A4D /* statusWinBack.png */,
+				B96E67F11C79E3F400C5E260 /* CCBackGroundView.h */,
+				B96E67F21C79E3F400C5E260 /* CCBackGroundView.m */,
 				B9F9FE3D1C6EF48F00D89A4D /* CCStatusWin.h */,
 				B9F9FE3E1C6EF48F00D89A4D /* CCStatusWin.m */,
 			);
@@ -279,13 +281,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B96E67F81C79E57800C5E260 /* ModalWinCtr.xib in Resources */,
 				B946009519885D4000B138EA /* InfoPlist.strings in Resources */,
 				B94600A319885D4100B138EA /* Images.xcassets in Resources */,
-				B93FA5311C6D72610034EC2C /* SheetWinView2.xib in Resources */,
+				B96E67F01C79955F00C5E260 /* SheetWin2Ctr.xib in Resources */,
 				B946009B19885D4100B138EA /* Credits.rtf in Resources */,
 				B94600A119885D4100B138EA /* MainMenu.xib in Resources */,
-				B9F9FE421C6F074C00D89A4D /* statusWinBack.png in Resources */,
-				B93FA52A1C6D562A0034EC2C /* SheetWinView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B96E67F71C79E57800C5E260 /* ModalWinCtr.m in Sources */,
 				B946009E19885D4100B138EA /* AppDelegate.m in Sources */,
 				B946009719885D4000B138EA /* main.m in Sources */,
 				B9F9FE401C6EF49000D89A4D /* CCStatusWin.m in Sources */,
-				B93FA5301C6D72610034EC2C /* SheetWinView2.m in Sources */,
-				B93FA5291C6D562A0034EC2C /* SheetWinView.m in Sources */,
+				B96E67EF1C79955F00C5E260 /* SheetWin2Ctr.m in Sources */,
+				B96E67F31C79E3F400C5E260 /* CCBackGroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
