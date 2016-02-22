@@ -51,7 +51,6 @@ static const NSInteger SHEET1_CANCEL	= 129;
     [savepanel setCanCreateDirectories:NO]; //フォルダ作成ボタンの有無
     [savepanel setShowsHiddenFiles:YES]; //隠しファイル表示の可否
     //[savepanel setShowsTagField:NO]; //タグフィールドの有無
-    [savepanel setDirectoryURL:NO]; //初期表示でディレクトリの内容表示の可否
     [savepanel setTreatsFilePackagesAsDirectories:YES]; //パッケージをディレクトして扱うかの可否
     [savepanel setTagNames:[NSArray arrayWithObjects:@"User'sFile", nil]]; //タグフィールドのデフォルト値
     //[savepanel setCanSelectHiddenExtension:YES]; //拡張子を隠すチェックボックスの有無
